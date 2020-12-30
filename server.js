@@ -67,6 +67,14 @@ app.use(hpp());
 // Enable CORS
 app.use(cors());
 
+app.use('/', (req, res, next) => {
+  res.setHeader(
+    'Content-Security-Policy',
+    "default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'"
+  );
+  next();
+});
+
 // Set static folder
 app.use(express.static(path.join((__dirname, 'public'))));
 
