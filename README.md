@@ -2,7 +2,7 @@
 
 This is the backend for a Bootcamp Directory made using NodeJS.
 
-Test out the API <a href="https://code-camp-bbsr.herokuapp.com/" target="_blank">here</a>
+Test out the API <a href="https://code-camp-bbsr.herokuapp.com/" target="_self">here</a>
 
 The following are the functionalites of the API.
 
